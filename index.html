@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using OpenLayers with Vite</title>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div class="popupdisplay" id="popupdisplay">
+      <div style="float: right">
+        <input value="x" type="button" id="close" />
+      </div>
+      <div id="popup"></div>
+      <br/>
+      <hr/>
+      <input id="mint" type="button" value="Mint" />
+      <!-- <button class="buttonload">
+        <i class="fa fa-spinner fa-spin onchain"></i>Mint
+      </button> -->
+    </div>
+    <script>
+        document.getElementById('close').onclick = function() {
+
+var popup = document.getElementById("popupdisplay");
+ popup.style.visibility="hidden";
+};
+      </script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

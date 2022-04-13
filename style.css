@@ -1,0 +1,145 @@
+@import "node_modules/ol/ol.css";
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+#randomButton{
+  width: 100px;
+  padding: 10px 24px;
+  font-size: 9px;
+}
+
+
+.popupdisplay{
+    position: absolute;
+    top: 25%;
+    visibility: hidden;
+    left: 25%;
+    opacity: .8;
+    width: 400px;
+    height: 131px;
+    z-index: 1;
+    box-shadow: 5px 10px 10px;
+    background: white;
+    padding: 40px;
+    border: 2px solid rgb(14, 12, 12);
+    border-radius: 20px;
+}
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tdata{
+  width:40%;
+  font-family:verdana;
+  font-size:15px;  
+  color:#fff;
+  padding: 10px;
+  text-align:center;
+}
+.tdata th{
+    background: #0780BA;
+
+    color: #fff;
+    line-height:35px;
+  }
+.tdata td{
+    background: #99DBFB;    
+    padding:10px;
+
+    color: #000;
+  }  
+          .mine,.refresh {
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            display: inline;
+          }
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popupdisplay .hide {
+  visibility: hidden;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.buttonload {
+  background-color: #04AA6D; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+ 
+}
+.onchain{
+/* display: none; */
+
+  
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/* ul li a{
+  display: none !important;
+}
+
+ul li{
+  display: none !important;
+} */
